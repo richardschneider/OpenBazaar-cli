@@ -1,0 +1,57 @@
+{
+  "name": "OpenBazaar-cli",
+  "description": "Command line tool for Open Bazaar",
+  "homepage": "https://github.com/richardschneider/OpenBazaar-cli",
+  "bugs": "https://github.com/richardschneider/OpenBazaar-cli/issues",
+  "license": "MIT",
+  "main": "index.js",
+   "author": {
+    "name": "Richard Schneider",
+    "email": "makaretu@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/richardschneider/OpenBazaar-cli"
+  },
+  "keywords": [
+    "bitcoin",
+    "open",
+    "bazaar"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-coveralls": "^0.1.4",
+    "gulp-jshint": "^2.0.1",
+    "gulp-spawn-mocha": "^3.1.0",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0",
+    "mocha": "*",
+    "semantic-release": "^4.3.5",
+    "should": "*",
+    "validate-commit-msg": "^2.6.1",
+  },
+  "config": {
+    "ghooks": {
+      "commit-msg": "validate-commit-msg"
+    },
+    "deployToGit": {
+      "repository": "https://$GH_TOKEN@github.com/richardschneider/OpenBazaar-cli",
+      "branch": "gh-pages",
+      "folder": "site",
+      "script": "gulp site",
+      "commit": "chore(site): publish $npm_package_version",
+      "user": {
+        "email": "noreply@emanon.org",
+        "name": "CI Travis"
+      }
+    }
+  },
+  "scripts": {
+    "test": "gulp test",
+    "deploy-site": "deploy-to-git",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+  }
+}
