@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+'use strict';
+
+const app = require('../lib/app');
+
+app.commander
+    .version(app.version)
+    .usage('<cmd> [<args>]')
+    .description('Open Bazaar tool')
+    .command('config <action> [<args>]', 'manage the open bazaar configuration')
+    ;
+    
+app.commander.parse(process.argv);
+
+if (!app.commander.args.length) { 
+    app.commander.help();
+}
