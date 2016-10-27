@@ -9,7 +9,7 @@ app.commander
     .description('list the profile')
     .alias('ls')
     .action(target => api
-        .getJSON('profile', target)
+        .getJSON('profile', { guid: target })
         .then(o => output.result(o)))
     ;
 
