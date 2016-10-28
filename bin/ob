@@ -10,6 +10,7 @@ app.commander
     .description('Open Bazaar tool')
     .command('config <action> [<args>]', 'manage the open bazaar configuration')
     .command('profile <action> [<args>]', 'manage the open bazaar profile')
+    .command('setting <action> [<args>]', 'manage the open bazaar settings')
     ;
     
 app.commander.parse(process.argv);
