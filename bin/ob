@@ -11,6 +11,7 @@ app.commander
     .command('config <action> [<args>]', 'manage the open bazaar configuration')
     .command('profile <action> [<args>]', 'manage the open bazaar profile')
     .command('setting <action> [<args>]', 'manage the open bazaar settings')
+    .command('listing <action> [<args>]', 'manage the open bazaar listings')
     ;
     
 app.commander.parse(process.argv);
