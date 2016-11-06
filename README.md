@@ -3,7 +3,7 @@
 [![Travis build status](https://travis-ci.org/richardschneider/OpenBazaar-cli.svg)](https://travis-ci.org/richardschneider/OpenBazaar-cli)
 [![npm version](https://badge.fury.io/js/OpenBazaar-cli.svg)](https://badge.fury.io/js/OpenBazaar-cli) 
 
-Command line tool for [Open Bazaar](https://openbazaar.org).  Manages your local or remove OB server.
+Command line tool for [Open Bazaar](https://openbazaar.org).  Manages your local or remote OB server.
 
 ## Getting started
 
