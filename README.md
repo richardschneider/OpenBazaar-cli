@@ -9,7 +9,7 @@ Command line tool for [Open Bazaar](https://openbazaar.org).  Manages your local
 
 Install with [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm)
 
-    > npm install -g openbaazar-cli
+    > npm install -g OpenBazaar-cli
 
 Show your profile
 
