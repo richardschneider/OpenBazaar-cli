@@ -12,7 +12,7 @@ app.commander
     .command('profile <action> [<args>]', 'manage the open bazaar profile')
     .command('setting <action> [<args>]', 'manage the open bazaar settings')
     .command('listing <action> [<args>]', 'manage the open bazaar listings')
-    .command('forex <action> [<args>]', 'manage the open bazaar foreign exchange').alias('fx')
+    .command('forex <action> [<args>]', 'manage the open bazaar foreign exchange')
     ;
     
 app.commander.parse(process.argv);
