@@ -7,7 +7,7 @@ Command line tool for [Open Bazaar](https://openbazaar.org).  Manages your local
 
 ## Getting started
 
-Install with [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm)
+Install with [npm](http://blog.npmjs.org/post/85484771375/how-to-install-npm), to create the `ob` tool on your computer.
 
     > npm install -g OpenBazaar-cli
 
