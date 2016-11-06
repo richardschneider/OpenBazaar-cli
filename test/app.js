@@ -10,7 +10,7 @@ describe('App', () => {
 
     it('should have a version', () => {
        app.should.have.property('version')
-	       .and.equal('0.0.42');
+	       .and.match(/\d+\.\d+\.\d+/);
     });
 
 });
