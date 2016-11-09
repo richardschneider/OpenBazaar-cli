@@ -76,4 +76,12 @@ Generates the following on my server
 
 Many of the commands allow changing the data, using the **set** action.
 
-    >ob profile set about "G'day mate" 
+    > ob profile set about "G'day mate" 
+
+### Map
+
+Display a map of your peers
+
+    > ob peers --map >map.html
+    > map.html
+    

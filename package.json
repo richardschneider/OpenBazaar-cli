@@ -1,7 +1,7 @@
 {
   "name": "OpenBazaar-cli",
   "description": "Command line tool for Open Bazaar",
-  "version": "0.0.45",
+  "version": "0.0.46",
   "homepage": "https://github.com/richardschneider/OpenBazaar-cli",
   "bugs": "https://github.com/richardschneider/OpenBazaar-cli/issues",
   "license": "MIT",
