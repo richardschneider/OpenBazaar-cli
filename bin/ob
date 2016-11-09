@@ -13,6 +13,7 @@ app.commander
     .command('setting <action> [<args>]', 'manage the open bazaar settings')
     .command('listing <action> [<args>]', 'manage the open bazaar listings')
     .command('forex <action> [<args>]', 'manage the open bazaar foreign exchange')
+    .command('peers', 'list the connected peers')
     ;
     
 app.commander.parse(process.argv);
