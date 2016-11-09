@@ -34,6 +34,7 @@ function ipinfo(ipaddr) {
 
 app.commander
     .option('--geo', 'add geographical info about the ip address')
+    .option('--map', 'produce html to display the geo data')
     .parse(process.argv)
 ;
 
@@ -41,7 +42,7 @@ api
     .getJSON('connected_peers')
     .then(o => {
         let peers = o.peers.map(p => p[0]);
-        if (app.options.geo) {
+        if (app.options.geo || app.options.map) {
             return Promise
                 .all(peers.map(ipinfo))
                 .then(features => {
