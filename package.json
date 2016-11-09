@@ -1,7 +1,7 @@
 {
   "name": "OpenBazaar-cli",
   "description": "Command line tool for Open Bazaar",
-  "version": "0.0.44",
+  "version": "0.0.45",
   "homepage": "https://github.com/richardschneider/OpenBazaar-cli",
   "bugs": "https://github.com/richardschneider/OpenBazaar-cli/issues",
   "license": "MIT",
@@ -25,6 +25,7 @@
   ],
   "dependencies": {
     "commander": "^2.9.0",
+    "glob": "^7.1.1",
     "ini": "^1.3.4",
     "superagent": "^2.3.0",
     "xml2js": "^0.4.17"
