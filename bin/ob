@@ -7,7 +7,7 @@ const app = require('../lib/app');
 app.commander
     .version(app.version)
     .usage('<cmd> [<args>]')
-    .description('Open Bazaar tool')
+    .description('An Open Bazaar tool')
     .command('config <action> [<args>]', 'manage the open bazaar configuration')
     .command('profile <action> [<args>]', 'manage the open bazaar profile')
     .command('setting <action> [<args>]', 'manage the open bazaar settings')
